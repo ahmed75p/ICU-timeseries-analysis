@@ -34,39 +34,32 @@ icu-project/
 ⚠️ Note: Due to the dataset’s large size, only a **sample** is uploaded here.  
 The full dataset is available on [Mortality of ICU Patients - PhysioNet](https://www.kaggle.com/datasets/msafi04/predict-mortality-of-icu-patients-physionet)).
 
----
+
 
 ## 📊 Dataset
 
-- **Main file**:
-- 
+- **Main file**: 
   `RecordID`, `SAPS-I`, `SOFA`, `Length_of_stay`, `Survival`, `In-hospital_death`
   
 - **~4000 patient files** (`.txt`), each containing time-series data per patient.  
 
 Data was split into:  
 
-- **Static Information**: Age, Gender, Height, ICUType, Weight
-- 
-- **Time-Series Information**: Patient vitals & lab results  
+- **Master**: RecordID	SAPS-I	SOFA	Length_of_stay	In-hospital_death	Age	Gender	Height	ICUType	Weight
+- **dynamic_features**: Patient vitals & lab results  
 
----
+
 
 ## 🛠️ Python Libraries Used
 
-- **pandas** → data cleaning & preprocessing
- 
+- **pandas** → data cleaning & preprocessing 
 - **numpy** → numerical operations
-  
 - **os, glob** → reading & combining patient files
-  
 - **seaborn** → statistical visualization
-  
 - **matplotlib** → plotting charts
-  
 - **boxplot** → used to detect and illustrate outliers  
 
----
+
 
 ## 🔍 Project Workflow
 
@@ -74,16 +67,13 @@ Data was split into:
 ### 1. Data Understanding
 
 - Reviewed medical terms and normal ranges of indicators.
-- 
-- Performed **EDA** to explore relationships.  
+- Performed **EDA** to explore relationships.
 
-
+  
 ### 2. Data Cleaning
 
 - Removed missing values.
-- 
 - Handled inconsistent and outlier data (illustrated with **Boxplots**).
-- 
 - Combined patient static data with the main dataset.  
 
 
@@ -91,41 +81,30 @@ Data was split into:
 
 Created an **interactive dashboard** to show:  
 
-
 #### 🧑‍⚕️ Demographics & ICU Insights
 
-- Number of patients.
-- 
+- Number of patients. 
 - Male vs. Female distribution.
-- 
 - Mortality vs. Survival rates.
-- 
 - ICU types and severity of patients in each ICU.  
 
 
 #### 📊 Medical Relationships
 
 - **SAPS vs. SOFA** relationship.
--   
 - **Age vs. SAPS** correlation.
-- 
 - Age groups with higher admission and severity.  
-
 
 
 #### 💉 Patient Vital Signs
 
-- Oxygen saturation in blood (SaO2).
-- 
+- Oxygen saturation in blood (SaO2). 
 - Inhaled oxygen level (FiO2).
-- 
 - Relation between SaO2 & FiO2.
--   
 - Whether the patient is on mechanical ventilation.
--   
 - Respiratory rate (breaths per minute).
-- 
 - Glasgow Coma Scale (**GCS**) – awareness level.  
+
 
 #### 🩸 Blood Parameters
 - Cholesterol level trends over time.  
@@ -135,7 +114,6 @@ Created an **interactive dashboard** to show:
 - White Blood Cells (WBCs).  
 - Relationship between **WBCs and Platelets** (to detect inflammations).  
 
----
 
 ## 💡 Key Insights
 
@@ -147,7 +125,6 @@ Created an **interactive dashboard** to show:
 - **WBC vs. Platelets** analysis provided signals of potential infections.  
 - GCS helped monitor patient consciousness.  
 
----
 
 ## 🚀 Scope
 
@@ -156,12 +133,13 @@ This project demonstrates:
 - Exploratory Data Analysis (EDA).  
 - Building interactive healthcare dashboards.  
 
+
 🔮 Future work:  
 - Predictive modeling for ICU mortality/survival.  
 - Machine Learning models for severity classification.  
 - Real-time dashboards for ICU patient monitoring.  
 
----
+
 
 ## ⚙️ Tools & Technologies
 
@@ -170,20 +148,19 @@ This project demonstrates:
 - **Excel**: initial exploration  
 - **GitHub**: version control & sharing  
 
----
 
 ## 📸 Project Screenshots
 
-![Dashboard Overview](https://github.com/ahmed75p/Mortality-of-ICU-Patients-PhysioNet/blob/main/icu_images/ICU1.png))  
-![Patient Vital Signs](https://github.com/ahmed75p/Mortality-of-ICU-Patients-PhysioNet/blob/main/icu_images/ICU2.png))  
-![Respiratory & Blood](https://github.com/ahmed75p/Mortality-of-ICU-Patients-PhysioNet/blob/main/icu_images/ICU3.png)  
+![Patient Demographics & Severity](https://github.com/ahmed75p/Mortality-of-ICU-Patients-PhysioNet/blob/main/icu_images/ICU1.png))  
 
----
+![Patient Vital Signs](https://github.com/ahmed75p/Mortality-of-ICU-Patients-PhysioNet/blob/main/icu_images/ICU2.png))
+
+![Respiratory & Blood Profile](https://github.com/ahmed75p/Mortality-of-ICU-Patients-PhysioNet/blob/main/icu_images/ICU3.png)  
+
+
 
 **Ahmed Mostafa**  
 - 📧 Email: ahmedmostafa75p@gmail.com  
 - 🔗 LinkedIn: [My LinkedIn Profile](www.linkedin.com/in/ahmed-mostafa-841412250)  
 
-**Ahmed Mostafa**  
-- 📧 Email: ahmedmostafa75p@gmail.com  
-- 🔗 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile) 
+
